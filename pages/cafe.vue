@@ -2,7 +2,6 @@
   <div id="cafeContainer" class="fill-height fill-width relative">
     <v-carousel
       height="100%"
-      hide-delimiter-background
       show-arrows-on-hover
       progress
     >
@@ -50,6 +49,7 @@
       </v-carousel-item>
       <v-carousel-item
         src="img/slideshow/about-slideshow/slide3.jpg"
+        style="overflow: hidden"
       >
         <div id="background" class="fill-height fill-width"></div>
         <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
