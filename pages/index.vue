@@ -14,7 +14,7 @@
         :key="i"
       >
         <div id="slider__img__wrapper" class="fill-height">
-          <img :id="'slider__img'+i" :src="'img/slideshow/top-slideshow/slide'+i+'.png'" :alt="'top-slideshow-'+i">
+          <img :id="'slider__img'+i" :src="'img/slideshow/top-slideshow/slide'+i+'.jpg'" :alt="'top-slideshow-'+i">
         </div>
       </v-carousel-item>
     </v-carousel>

@@ -9,7 +9,7 @@
     >
       <v-carousel-item>
         <div id="slider__img__wrapper" class="fill-height">
-          <img id="slider__img" src="img/slideshow/about-slideshow/slide1.png" alt="about-slideshow-1">
+          <img id="slider__img" src="img/slideshow/about-slideshow/slide1.jpg" alt="about-slideshow-1">
         </div>
 
         <v-container id="description" class="px-16 white--text">
@@ -28,7 +28,7 @@
 
       <v-carousel-item>
         <div id="slider__img__wrapper" class="fill-height">
-          <img id="slider__img" src="img/slideshow/about-slideshow/slide2.png" alt="about-slideshow-2">
+          <img id="slider__img" src="img/slideshow/about-slideshow/slide2.jpg" alt="about-slideshow-2">
         </div>
 
         <v-container id="description" class="px-16 white--text">
@@ -53,10 +53,10 @@
       <v-carousel-item>
         <div class="fill-height overflow-auto relative">
           <div id="slider__img__wrapper" class="fill-height fixed">
-            <img id="slider__img" src="img/slideshow/about-slideshow/slide3.png" alt="about-slideshow-3" style="z-index: 0;">
+            <img id="slider__img" src="img/slideshow/about-slideshow/slide3.jpg" alt="about-slideshow-3" style="z-index: 0;">
           </div>
 
-          <v-container class="absolute fill-height px-8 white--text">
+          <v-container class="fill-height px-8 white--text">
             <v-row>
               <v-col cols="12" style="z-index: 1;">
                 <h1 class="text-center nowrap">カフェ開催までの流れ</h1>
@@ -68,7 +68,7 @@
                 md="4"
               >
                 <v-card>
-                  <v-img :src="'img/processes/process'+(i+1)+'.png'"></v-img>
+                  <v-img :src="'img/processes/process'+(i+1)+'.jpg'"></v-img>
                   <div class="pa-2">
                     <h2 class="text-center">{{ process.subheading }}</h2>
                     <p>{{ process.text }}</p>

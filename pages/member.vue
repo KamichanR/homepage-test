@@ -13,10 +13,10 @@
       >
         <div class="fill-height overflow-auto relative">
           <div id="slider__img__wrapper" class="fill-height fixed">
-            <img id="slider__img" :src="'img/slideshow/member-slideshow/slide'+(i+1)+'.png'" :alt="'about-slideshow-'+(i+1)">
+            <img id="slider__img" :src="'img/slideshow/member-slideshow/slide'+(i+1)+'.jpg'" :alt="'about-slideshow-'+(i+1)">
           </div>
 
-          <v-container class="absolute fill-height px-8 white--text">
+          <v-container class="fill-height px-8 white--text" style="width: 100%;">
             <v-row>
               <v-col cols="12" style="z-index: 1;">
                 <h1 class="text-center nowrap">{{ departmentOfCafe.departmentName }}</h1>
