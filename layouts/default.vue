@@ -34,7 +34,6 @@
     <v-app-bar
       :clipped-left="clipped"
       fixed
-      height="64"
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
@@ -75,7 +74,6 @@
     </v-main>
     <v-footer
       fixed
-      height="36"
       app
     >
       <span>&copy; {{ new Date().getFullYear() }} Hokudai Café Project</span>
