@@ -65,15 +65,12 @@
       </v-btn> -->
     </v-app-bar>
     <v-main>
-      <div class="fill-height pa-0">
-          <Nuxt />
-      </div>
-      <!-- <v-container
+      <v-container
         fluid
-        class="fill-height ma-0"
+        class="fill-height pa-0"
       >
         <Nuxt />
-      </v-container> -->
+      </v-container>
     </v-main>
     <v-footer
       fixed
