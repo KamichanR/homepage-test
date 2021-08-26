@@ -1,15 +1,15 @@
 <template>
   <div id="cafeContainer" class="fill-height fill-width relative">
     <v-carousel
+      height="100%"
       show-arrows-on-hover
       progress
-      style="height: 100%;"
     >
       <v-carousel-item
-
+        src="img/slideshow/about-slideshow/slide1.jpg"
       >
         <div id="background" class="fill-height fill-width"></div>
-        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto py-16">
           <v-container class="ma-auto white--text">
             <h1 class="text-center">あらゆる人との交流の場</h1>
             <p>
@@ -25,10 +25,10 @@
         </div>
       </v-carousel-item>
       <v-carousel-item
-
+        src="img/slideshow/about-slideshow/slide2.jpg"
       >
         <div id="background" class="fill-height fill-width"></div>
-        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto py-16">
           <v-container class="ma-auto white--text">
             <h1 class="text-center">代表挨拶</h1>
             <p>
@@ -48,10 +48,10 @@
         </div>
       </v-carousel-item>
       <v-carousel-item
-
+        src="img/slideshow/about-slideshow/slide3.jpg"
       >
         <div id="background" class="fill-height fill-width"></div>
-        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto py-16">
           <v-container class="ma-auto white--text">
             <h1 class="text-center">カフェ開催までの流れ</h1>
             <v-row>
@@ -66,7 +66,7 @@
                     :src="'img/processes/process'+(i+1)+'.jpg'"
                     contain
                   ></v-img>
-                  <div class="pa-2">
+                  <div class="pa-4">
                     <h2 class="text-center">{{ process.subheading }}</h2>
                     <p>{{ process.text }}</p>
                   </div>
