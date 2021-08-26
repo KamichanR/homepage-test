@@ -6,7 +6,7 @@
       progress
     >
       <v-carousel-item
-        src="img/slideshow/about-slideshow/slide1.jpg"
+
       >
         <div id="background" class="fill-height fill-width"></div>
         <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
@@ -25,7 +25,7 @@
         </div>
       </v-carousel-item>
       <v-carousel-item
-        src="img/slideshow/about-slideshow/slide2.jpg"
+
       >
         <div id="background" class="fill-height fill-width"></div>
         <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
@@ -48,7 +48,7 @@
         </div>
       </v-carousel-item>
       <v-carousel-item
-        src="img/slideshow/about-slideshow/slide3.jpg"
+
       >
         <div id="background" class="fill-height fill-width"></div>
         <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
