@@ -1,77 +1,103 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
+    <v-carousel
+      id="topSlideshow"
+      class="ma-0"
+      cycle
+      interval="5000"
+      progress
+      :height="topSlideshowHeight"
+      :show-arrows="false"
+    >
+      <v-carousel-item
+        v-for="i of 5"
+        :key="i"
+      >
+        <div id="slider__img__wrapper" class="fill-height">
+          <img :id="'slider__img'+i" :src="'img/slideshow/top-slideshow/slide'+i+'.png'" :alt="'top-slideshow-'+i">
+        </div>
+      </v-carousel-item>
+    </v-carousel>
+    <v-container id="eyecatch__logo">
+      <v-img
+        contain
+        max-height="640"
+        max-width="640"
+        src="img/eyecatch__logo.svg"
+        alt="北大カフェプロジェクト"
+        style="margin: auto;"
+      ></v-img>
+    </v-container>
   </v-row>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      topSlideshowHeight: 0
+    }
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getTopSlideshowHeight)
+  },
+  mounted() {
+    window.addEventListener('resize', this.getTopSlideshowHeight)
+    this.getTopSlideshowHeight()
+  },
+  methods: {
+    getTopSlideshowHeight() {
+      this.topSlideshowHeight = parseInt(window.innerHeight) - 100
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+#slider__img__wrapper {
+  background-color: #000;
+  display: inline-block;
+  width: 100%;
+}
+
+#slider__img1,
+#slider__img2,
+#slider__img3,
+#slider__img4,
+#slider__img5 {
+  display: block;
+  height: 100%;
+  object-fit: cover !important;
+  opacity: .75;
+  width: 100%;
+}
+
+#slider__img1 {
+  object-position: 60% 50%;
+}
+
+#slider__img2 {
+  object-position: 70% 50%;
+}
+
+#slider__img3 {
+  object-position: 65% 50%;
+}
+
+#slider__img4 {
+  object-position: 60% 50%;
+}
+
+#slider__img5 {
+  object-position: 20% 50%;
+}
+
+#eyecatch__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
