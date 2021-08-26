@@ -35,6 +35,7 @@
       :clipped-left="clipped"
       fixed
       app
+      height="64"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn
@@ -64,7 +65,7 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn> -->
     </v-app-bar>
-    <v-main>
+    <v-main id="main">
       <v-container
         fluid
         class="fill-height pa-0"
@@ -75,6 +76,7 @@
     <v-footer
       fixed
       app
+      height="36"
     >
       <span>&copy; {{ new Date().getFullYear() }} Hokudai Café Project</span>
     </v-footer>
@@ -133,8 +135,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
-  height: 64px !important;
+#main {
+  height: calc(100vh - 100px);
 }
 
 #hokcafe__logo {
