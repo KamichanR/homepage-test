@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="wrapper">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -73,13 +73,13 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer
+    <!-- <v-footer
       fixed
       app
       height="36"
     >
       <span>&copy; {{ new Date().getFullYear() }} Hokudai Café Project</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 
@@ -131,27 +131,10 @@ export default {
       headerHeight: 0
     }
   },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.screenHeight)
-  },
-  mounted() {
-    window.addEventListener('resize', this.screenHeight)
-    this.screenHeight()
-  },
-  methods: {
-    screenHeight() {
-      const height = window.innerHeight
-      document.documentElement.style.setProperty('--vh', height / 100 + 'px')
-    }
-  }
 }
 </script>
 
 <style lang="scss" scoped>
-#main {
-  height: calc(const(--vh) - 100px);
-}
-
 #hokcafe__logo {
   max-width: 100%;
 }
