@@ -51,7 +51,7 @@
         src="img/slideshow/about-slideshow/slide3.jpg"
       >
         <div id="background" class="fill-height fill-width"></div>
-        <div id="content" class="align-content-center d-flex fill-height fill-width">
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
           <v-container class="ma-auto white--text">
             <h1 class="text-center">カフェ開催までの流れ</h1>
             <v-row>
