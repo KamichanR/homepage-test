@@ -1,9 +1,9 @@
 <template>
   <div id="cafeContainer" class="fill-height fill-width relative">
     <v-carousel
-      height="100%"
       show-arrows-on-hover
       progress
+      style="height: 100%;"
     >
       <v-carousel-item
 
