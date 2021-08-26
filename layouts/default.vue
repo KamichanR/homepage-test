@@ -131,12 +131,25 @@ export default {
       headerHeight: 0
     }
   },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.screenHeight)
+  },
+  mounted() {
+    window.addEventListener('resize', this.screenHeight)
+    this.screenHeight()
+  },
+  methods: {
+    screenHeight() {
+      const height = window.innerHeight
+      document.documentElement.style.setProperty('--vh', height / 100 + 'px')
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 #main {
-  height: calc(100vh - 100px);
+  height: calc(const(--vh) - 100px);
 }
 
 #hokcafe__logo {
