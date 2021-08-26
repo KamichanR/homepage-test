@@ -68,7 +68,7 @@
     <v-main>
       <v-container
         fluid
-        class="ma-0"
+        class="fill-height ma-0 pa-0"
       >
         <Nuxt />
       </v-container>

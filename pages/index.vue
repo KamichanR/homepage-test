@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center" class="fill-height">
+  <v-row justify="center" align="center">
     <v-carousel
       id="topSlideshow"
       class="ma-0"
