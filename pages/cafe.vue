@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-row justify="center" align="center" class="fill-height">
 
-  </div>
+  </v-row>
 </template>

@@ -51,11 +51,11 @@
       </v-carousel-item>
 
       <v-carousel-item>
-        <div class="fill-height overflow-auto relative">
-          <div id="slider__img__wrapper" class="fill-height fixed">
+        <div id="slider__img__wrapper" class="fill-height fixed">
             <img id="slider__img" src="img/slideshow/about-slideshow/slide3.jpg" alt="about-slideshow-3" style="z-index: 0;">
           </div>
 
+        <div class="fill-height overflow-auto relative">
           <v-container class="fill-height px-8 white--text">
             <v-row>
               <v-col cols="12" style="z-index: 1;">
