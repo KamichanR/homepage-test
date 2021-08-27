@@ -31,6 +31,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'お問い合わせ｜'
+    }
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 #background {
   background-color: rgba($color: #000, $alpha: .5);

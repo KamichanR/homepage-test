@@ -99,6 +99,11 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: '団体概要｜'
+    }
   }
 }
 </script>
@@ -118,6 +123,7 @@ export default {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 #description {
   color: white;
 }

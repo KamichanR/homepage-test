@@ -10,7 +10,13 @@
     >
       <v-list-item>
         <v-list-item-icon class="ma-auto">
-          <img id="hokcafe__logo" src="/img/hokcafe__logo.svg" alt="北大カフェプロジェクト">
+          <v-img
+            id="hokcafe__logo"
+            src="/img/hokcafe__logo.svg"
+            alt="北大カフェプロジェクト"
+            height="100%"
+            width="100%"
+          ></v-img>
         </v-list-item-icon>
       </v-list-item>
 

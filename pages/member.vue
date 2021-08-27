@@ -384,6 +384,11 @@ export default {
       ]
     }
   },
+  head() {
+    return {
+      title: 'メンバー紹介｜'
+    }
+  },
   beforeDestroy() {
     window.removeEventListener('resize', this.getTopSlideshowHeight)
   },
