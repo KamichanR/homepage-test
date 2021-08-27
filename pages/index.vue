@@ -1,5 +1,5 @@
 <template>
-  <div id="cafeContainer" class="fill-height fill-width relative">
+  <div class="fill-height fill-width relative">
     <v-carousel
       height="100%"
       hide-delimiter-background

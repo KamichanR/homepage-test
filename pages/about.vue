@@ -1,66 +1,60 @@
 <template>
-  <v-row justify="center" align="center">
+  <div class="fill-height fill-width relative">
     <v-carousel
-      id="topSlideshow"
-      class="ma-0"
+      height="100%"
+      show-arrows-on-hover
       progress
-      hide-delimiter-background
-      :height="topSlideshowHeight"
     >
-      <v-carousel-item>
-        <div id="slider__img__wrapper" class="fill-height">
-          <img id="slider__img" src="img/slideshow/about-slideshow/slide1.jpg" alt="about-slideshow-1">
+      <v-carousel-item
+        src="img/slideshow/about-slideshow/slide1.jpg"
+      >
+        <div id="background" class="fill-height fill-width"></div>
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto py-16">
+          <v-container class="ma-auto white--text">
+            <h1 class="text-center">あらゆる人との交流の場</h1>
+            <p>
+              北大カフェプロジェクトは、美味しい飲み物と皆様との交流を通して、心温まるカフェスペースを提供する学生団体です。
+            </p>
+            <p>
+              札幌市民の方を始め、観光客、留学生など、多くの人が訪れる北海道大学の特色を活かし、手作りカフェを提供しています。世代や属性、大学と社会の垣根を越えた交流の場を創りたいという想いから、カフェを開催しています。
+            </p>
+            <p>
+              2007年に学生と教職員の有志によって立ち上げられて以来、季節やイベントに合わせたカフェ、学内外の団体とのコラボカフェなどを開催し、ご好評を頂いています。
+            </p>
+          </v-container>
         </div>
-
-        <v-container id="description" class="px-16 white--text">
-          <h1 class="text-center">あらゆる人との交流の場</h1>
-          <p>
-            北大カフェプロジェクトは、美味しい飲み物と皆様との交流を通して、心温まるカフェスペースを提供する学生団体です。
-          </p>
-          <p>
-            札幌市民の方を始め、観光客、留学生など、多くの人が訪れる北海道大学の特色を活かし、手作りカフェを提供しています。世代や属性、大学と社会の垣根を越えた交流の場を創りたいという想いから、カフェを開催しています。
-          </p>
-          <p>
-            2007年に学生と教職員の有志によって立ち上げられて以来、季節やイベントに合わせたカフェ、学内外の団体とのコラボカフェなどを開催し、ご好評を頂いています。
-          </p>
-        </v-container>
       </v-carousel-item>
-
-      <v-carousel-item>
-        <div id="slider__img__wrapper" class="fill-height">
-          <img id="slider__img" src="img/slideshow/about-slideshow/slide2.jpg" alt="about-slideshow-2">
+      <v-carousel-item
+        src="img/slideshow/about-slideshow/slide2.jpg"
+      >
+        <div id="background" class="fill-height fill-width"></div>
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto py-16">
+          <v-container class="ma-auto white--text">
+            <h1 class="text-center">代表挨拶</h1>
+            <p>
+              こんにちは、2021年度カフェプロ代表2年のそーたです。
+            </p>
+            <p>
+              今年度もコロナの影響で本来の目的のカフェ開催などできないかもしれません。だからと言って活動を自粛するのではなく、「今できる新しいことにいろいろ挑戦する」が僕が目指したいサークルの形です。
+            </p>
+            <p>
+              傲慢かもしれませんが、このサークルのトップを担ううえでメンバー全員に楽しいと思ってもらえる団体を作ります。2021年度の活動報告を是非とも楽しみにお待ちください。
+            </p>
+            <p>
+              今年度もゆるくてアットホームなカフェプロをどうぞよろしくお願いします。
+            </p>
+            <p class="text-right">代表 鵜飼奏汰</p>
+          </v-container>
         </div>
-
-        <v-container id="description" class="px-16 white--text">
-          <h1 class="text-center">代表挨拶</h1>
-          <p>
-            こんにちは、2021年度カフェプロ代表2年のそーたです。
-          </p>
-          <p>
-            今年度もコロナの影響で本来の目的のカフェ開催などできないかもしれません。だからと言って活動を自粛するのではなく、「今できる新しいことにいろいろ挑戦する」が僕が目指したいサークルの形です。
-          </p>
-          <p>
-            傲慢かもしれませんが、このサークルのトップを担ううえでメンバー全員に楽しいと思ってもらえる団体を作ります。
-            2021年度の活動報告を是非とも楽しみにお待ちください。
-          </p>
-          <p>
-            今年度もゆるくてアットホームなカフェプロをどうぞよろしくお願いします。
-          </p>
-          <p class="text-right">代表 鵜飼奏汰</p>
-        </v-container>
       </v-carousel-item>
-
-      <v-carousel-item>
-        <div id="slider__img__wrapper" class="fill-height fixed">
-            <img id="slider__img" src="img/slideshow/about-slideshow/slide3.jpg" alt="about-slideshow-3" style="z-index: 0;">
-          </div>
-
-        <div class="fill-height overflow-auto relative">
-          <v-container class="fill-height px-8 white--text">
+      <v-carousel-item
+        src="img/slideshow/about-slideshow/slide3.jpg"
+      >
+        <div id="background" class="fill-height fill-width"></div>
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto py-16">
+          <v-container class="ma-auto white--text">
+            <h1 class="text-center">カフェ開催までの流れ</h1>
             <v-row>
-              <v-col cols="12" style="z-index: 1;">
-                <h1 class="text-center nowrap">カフェ開催までの流れ</h1>
-              </v-col>
               <v-col
                 v-for="(process, i) of processes"
                 :key="i"
@@ -68,8 +62,11 @@
                 md="4"
               >
                 <v-card>
-                  <v-img :src="'img/processes/process'+(i+1)+'.jpg'"></v-img>
-                  <div class="pa-2">
+                  <v-img
+                    :src="'img/processes/process'+(i+1)+'.jpg'"
+                    contain
+                  ></v-img>
+                  <div class="pa-4">
                     <h2 class="text-center">{{ process.subheading }}</h2>
                     <p>{{ process.text }}</p>
                   </div>
@@ -80,14 +77,13 @@
         </div>
       </v-carousel-item>
     </v-carousel>
-  </v-row>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      topSlideshowHeight: 0,
       processes: [
         {
           subheading: '全体ミーティング',
@@ -103,48 +99,26 @@ export default {
         }
       ]
     }
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.getTopSlideshowHeight)
-  },
-  mounted() {
-    window.addEventListener('resize', this.getTopSlideshowHeight)
-    this.getTopSlideshowHeight()
-  },
-  methods: {
-    getTopSlideshowHeight() {
-      this.topSlideshowHeight = parseInt(window.innerHeight) - 100
-    }
-  },
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-#slider__img__wrapper {
-  background-color: #000;
-  display: inline-block;
-  width: 100%;
+#background {
+  background-color: rgba($color: #000, $alpha: .5);
 }
 
-#slider__img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  opacity: .6;
-  width: 100%;
-}
-
+#content,
 #description {
   position: absolute;
+  margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
-#progress__img {
-  object-fit: contain;
+#description {
+  color: white;
 }
 </style>

@@ -1,44 +1,42 @@
 <template>
-  <v-row justify="center" align="center">
+  <div class="fill-height fill-width relative">
     <v-carousel
-      id="topSlideshow"
-      class="ma-0"
+      height="100%"
       progress
       hide-delimiter-background
-      :height="topSlideshowHeight"
     >
       <v-carousel-item
         v-for="(departmentOfCafe, i) of departmentsOfCafe"
         :key="i"
+        :src="'img/slideshow/member-slideshow/slide'+(i+1)+'.jpg'"
       >
-        <div class="fill-height overflow-auto relative">
-          <div id="slider__img__wrapper" class="fill-height fixed">
-            <img id="slider__img" :src="'img/slideshow/member-slideshow/slide'+(i+1)+'.jpg'" :alt="'about-slideshow-'+(i+1)">
-          </div>
-
-          <v-container class="fill-height px-8 white--text" style="width: 100%;">
-            <v-row>
-              <v-col cols="12" style="z-index: 1;">
-                <h1 class="text-center nowrap">{{ departmentOfCafe.departmentName }}</h1>
-              </v-col>
+        <div id="background" class="fill-height fill-width"></div>
+        <div id="content" class="align-content-center d-flex fill-height fill-width overflow-auto">
+          <v-container class="ma-auto white--text">
+            <h1 class="text-center nowrap">{{ departmentOfCafe.departmentName }}</h1>
+            <v-row
+              justify="center"
+            >
               <v-col
                 v-for="(member, j) of departmentOfCafe.members"
                 id="member__wrapper"
                 :key="j"
-                cols="12"
-                sm="6"
-                lg="4"
+                cols="6"
+                sm="4"
+                lg="3"
                 class="circle relative"
               >
                 <img id="member__image" class="circle fill-width pa-0 object-contain" :src="'img/member/'+member.imageName+'.jpg'" :alt="member.name">
                 <div id="member__description" class="absolute ma-auto text-center">
-                  <p class="ma-0">
+                  <p class="ma-0 text-caption text-sm-body-1">
                     <strong>{{ member.name }}</strong><br>
                     <span v-if="member.position" class="nowrap">【{{ member.position }}】<br></span>
                     <span class="nowrap">{{ member.university }}・{{ member.departmentOfUniversity }}{{ member.grade }}年</span><br>
-                    <strong class="nowrap">好きな飲み物orカフェ</strong><br>
-                    <span>{{ member.favorite }}</span><br>
-                    <strong>ひとことコメント</strong><br>
+                    <span class="d-none d-md-inline-block">
+                      <strong class="nowrap">好きな飲み物orカフェ</strong><br>
+                      <span>{{ member.favorite }}</span><br>
+                    </span>
+                    <strong class="nowrap">ひとことコメント</strong><br>
                     <span>{{ member.comment }}</span>
                   </p>
                 </div>
@@ -48,7 +46,7 @@
         </div>
       </v-carousel-item>
     </v-carousel>
-  </v-row>
+  </div>
 </template>
 
 <script>
@@ -103,7 +101,7 @@ export default {
               departmentOfUniversity: '工学部',
               grade: 2,
               favorite: 'カフェモカ',
-              comment: 'このホームページを制作しています',
+              comment: 'このホームページを制作してます',
             },
             {
               name: 'ちひろ',
@@ -402,19 +400,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#slider__img__wrapper {
-  background-color: #000;
-  display: inline-block;
-  width: 100%;
+#background {
+  background-color: rgba($color: #000, $alpha: .5);
 }
 
-#slider__img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  opacity: .8;
-  width: 100%;
+#content {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #member__image {
