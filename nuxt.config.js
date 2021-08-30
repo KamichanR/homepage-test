@@ -74,7 +74,8 @@ export default {
   pwa: {
     manifest: {
       lang: 'ja'
-    }
+    },
+    icon: false
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
