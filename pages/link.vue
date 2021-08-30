@@ -2,6 +2,7 @@
   <div class="fill-height fill-width relative">
     <v-carousel
       height="100%"
+      hide-delimiter-background
       progress
     >
       <v-carousel-item

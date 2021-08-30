@@ -8,11 +8,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'description', name: 'description', content: '北大カフェプロジェクトは、北大構内を中心にコミュニケーションスペースとしてのカフェを展開している学生団体です。' },
+      { hid: 'og:url', name: 'og:url', content: 'http://hokcafe.com' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
+      { hid: 'og:title', name: 'og:title', content: '北大カフェプロジェクト' },
+      { hid: 'og:description', name: 'og:description', content: '北大カフェプロジェクトは、北大構内を中心にコミュニケーションスペースとしてのカフェを展開している学生団体です。' },
+      { hid: 'og:image', name: 'og:image', content: 'http://hockafe.com/apple-touch-icon.png' },
+      { hid: 'author', name: 'author', content: '北大カフェプロジェクト' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', type:'apple-touch-icon', href: '/apple-touch-icon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP' }
     ]
   },
